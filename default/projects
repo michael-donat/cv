@@ -1,0 +1,25 @@
+job=Moni
+url=https://getmoni.com
+-------------
+Moni provides a cross-border money transfer application.
+
+Solution is mobile centric, in a client/server configuration where native apps
+are using PHP/node.js backend service over a number of access APIs. Project
+involved numerous integrations into 3rd party services operating in the financial
+sector. Payment providers, cross border payout facilitators, FX services,
+KYC/identity verification providers were all brought together in a very mature,
+service oriented system that has been developed with the principles of hexagonal
+architecture in mind.
+
+From the early days code has been nearly 100% covered, continuously integrated and deployed which warranted
+frequent releases and sporadic bugs.
+
+Entire platform has been hosted within the AWS cloud, relying heavily on docker containers and automated provisioning with ansible and the aws-cli.
+
+===================
+job=php-vfs
+url=https://git.io/php-vfs
+-------------
+Virtual filesystem emulating PHP stream wrapper for use in unit testing with PHPUnit,
+PHPSpec or any other testing framework. It offers means to test methods interacting
+with real filesystem without creating temporary directories or file fixtures.

@@ -1,0 +1,22 @@
+{
+  "name": "michael-donat-cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-donat/cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michael-donat/cv/issues"
+  },
+  "homepage": "https://github.com/michael-donat/cv#readme",
+  "dependencies": {
+    "handlebars": "^4.0.2",
+  }
+}
