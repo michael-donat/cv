@@ -30,7 +30,6 @@
     margin: 0;
   }
   #top {
-    text-align: center;
     font-size: 0.7em;
     border-bottom: 1px solid  #2da4c4;
     padding-bottom: 3px;
@@ -48,12 +47,18 @@
   .container * {
 
   }
+
+@media (min-width: 992px) {
   .container {
     width: 820px;
     margin-top: 20px;
     padding-left: 0;
     margin-bottom: 20px;
   }
+  #top {
+    text-align: center;
+  }
+}
   #name {
     margin-top: 20px;
   }
@@ -63,6 +68,12 @@
     font-weight: bold;
     color: #2da4c4;
     text-transform: uppercase;
+  }
+
+  #contact img {
+    height: 15px;
+    vertical-align: middle;
+    margin: 2px 5px;
   }
 
   #top img {
@@ -85,7 +96,11 @@
   #experience {
     font-size: 14px;
   }
-  .section .col-xs-3 {
+  .section .col-md-3 {
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  .section .col-md-9 {
     padding-left: 0;
   }
   .job {
@@ -111,10 +126,10 @@
 
 
   <header>
-    <div id='top' class="row">
-      <div class="col-xs-4"><img src='img/phone-icon.png' /><span>+44 (0) 7590 602 953</span></div>
-      <div class="col-xs-4"><img src='img/mail-icon.png' /><span>michael.donat@me.com</span></div>
-      <div class="col-xs-4"><img src='img/github-icon.png' /><span>https://github.com/michael-donat</span></div>
+    <div id='top' class="row hidden-xs">
+      <div class="col-md-4"><img src='img/phone-icon.png' /><span>+44 (0) 7590 602 953</span></div>
+      <div class="col-md-4"><img src='img/mail-icon.png' /><span>michael.donat@me.com</span></div>
+      <div class="col-md-4"><img src='img/github-icon.png' /><span>https://github.com/michael-donat</span></div>
     </div>
     <div id='name' class="row">
 
@@ -161,12 +176,12 @@ integration and delivery, cloud environment provisioning and auto scaling.
     <div class="row">
       <h2>EXPERIENCE</h2>
       <div class="row" class="position">
-        <div class="col-xs-3">
+        <div class="col-md-3">
           <div class='job'>Head of Engineering</div>
           <div class='company'>Moni Technologies Ltd.</div>
           <div class='dates'>November 2013 - present</div>
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9">
             <p>
 Engaged to build an engineering team and deliver Moni’s money transferring
 platform from scratch. Work involved recruitment and management of cross-functional
@@ -183,12 +198,12 @@ of bugs with nearly 100% coverage via outside-in TDD/BDD, continuous delivery an
       </div>
         <hr />
       <div class="row" class="position">
-        <div class="col-xs-3">
+        <div class="col-md-3">
           <div class='job'>Software Architect / Devops</div>
           <div class='company'>Informa Business Information</div>
           <div class='dates'>September 2011 - November 2013</div>
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9">
             <p>
 Brought in to integrate recently acquired e-learning platform. Work included upgrade
 of open source software (symfony stack), migration to new data centre, implementation
@@ -204,12 +219,12 @@ continuous integration, test/behaviour driven development and devops.</p>
       </div>
         <hr />
       <div class="row" class="position">
-        <div class="col-xs-3">
+        <div class="col-md-3">
           <div class='job'>Senior Developer</div>
           <div class='company'>Virtual Universe</div>
           <div class='dates'>July 2007 - September 2011</div>
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9">
             <p>
 Responsible for overhauling legacy in-house entertainment platform.
 Both, customer and operator facing applications have been upgraded from PHP4 to PHP5 bringing in a new
@@ -224,12 +239,12 @@ capabilities became extremely easy.</p>
       </div>
         <hr />
       <div class="row" class="position">
-        <div class="col-xs-3">
+        <div class="col-md-3">
           <div class='job'>Developer</div>
           <div class='company'>Cardif Pinnacle</div>
           <div class='dates'>March 2007 - July 2007</div>
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9">
             <p>
 Duties included development of reporting systems for insurance resellers as well as training
 development team in programming techniques such as OOP, it&#x27;s principles and best practices,
@@ -240,12 +255,12 @@ webservices and server configuration.</p>
       </div>
         <hr />
       <div class="row" class="position">
-        <div class="col-xs-3">
+        <div class="col-md-3">
           <div class='job'>Developer</div>
           <div class='company'>Sonique Ltd.</div>
           <div class='dates'>July 2006 - March 2007</div>
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9">
             <p>
 Responsible for delivery of a podcasting platform prototype as well as various
 other projects for external clients. Work included design and execution of what
@@ -260,11 +275,11 @@ at the time was one of only few websites capable of recording/serving both audio
       <h2>RECENT PROJECTS</h2>
     </div>
     <div class="row" class="position">
-      <div class="col-xs-3">
+      <div class="col-md-3">
         <div class='job'>Moni</div>
         <div class='company'>https://getmoni.com</div>
       </div>
-      <div class="col-xs-9">
+      <div class="col-md-9">
           <p>
 Moni provides a cross-border money transfer application.</p>
           <p>Solution is mobile centric, in a client/server configuration where native apps
@@ -282,11 +297,11 @@ frequent releases and sporadic bugs.</p>
     </div>
         <hr />
     <div class="row" class="position">
-      <div class="col-xs-3">
+      <div class="col-md-3">
         <div class='job'>php-vfs</div>
         <div class='company'>https://git.io/php-vfs</div>
       </div>
-      <div class="col-xs-9">
+      <div class="col-md-9">
           <p>
 Virtual filesystem emulating PHP stream wrapper for use in unit testing with PHPUnit,
 PHPSpec or any other testing framework. It offers means to test methods interacting
@@ -295,6 +310,17 @@ with real filesystem without creating temporary directories or file fixtures.
       </div>
     </div>
   </article>
+
+  <section id='contact' class='section visible-xs'>
+    <div class="row">
+      <h2>CONTACT</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3"><img src='img/phone-icon.png' /><span>+44 (0) 7590 602 953</span></div>
+      <div class="col-md-3"><img src='img/mail-icon.png' /><span>michael.donat@me.com</span></div>
+      <div class="col-md-3"><img src='img/github-icon.png' /><span>https://github.com/michael-donat</span></div>
+    </div>
+  </section>
 </div>
 </body>
 </html>
