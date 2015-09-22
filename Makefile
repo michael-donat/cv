@@ -10,13 +10,10 @@ index:
 deploy: index
 	git diff --quiet HEAD || (git add . && git commit && git push)
 	git checkout gh-pages
-	git status
 	git pull
 	rm -rf img
-	git status
 	cp -rf build/img .
 	cp build/index.html index.html
-	git status
 	git add .
 	git commit -m"auto-generated $(GIT_BRANCH):$(GIT_REV)" || true
 	git push
