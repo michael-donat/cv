@@ -30,7 +30,6 @@
     margin: 0;
   }
   #top {
-    text-align: center;
     font-size: 0.7em;
     border-bottom: 1px solid  #2da4c4;
     padding-bottom: 3px;
@@ -48,12 +47,18 @@
   .container * {
 
   }
+
+@media (min-width: 992px) {
   .container {
     width: 820px;
     margin-top: 20px;
     padding-left: 0;
     margin-bottom: 20px;
   }
+  #top {
+    text-align: center;
+  }
+}
   #name {
     margin-top: 20px;
   }
@@ -63,6 +68,12 @@
     font-weight: bold;
     color: #2da4c4;
     text-transform: uppercase;
+  }
+
+  #contact img {
+    height: 15px;
+    vertical-align: middle;
+    margin: 2px 5px;
   }
 
   #top img {
@@ -85,7 +96,11 @@
   #experience {
     font-size: 14px;
   }
-  .section .col-xs-3 {
+  .section .col-md-3 {
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  .section .col-md-9 {
     padding-left: 0;
   }
   .job {
@@ -111,10 +126,10 @@
 
 
   <header>
-    <div id='top' class="row">
-      <div class="col-xs-4"><img src='img/phone-icon.png' /><span>{{ meta.number }}</span></div>
-      <div class="col-xs-4"><img src='img/mail-icon.png' /><span>{{ meta.email }}</span></div>
-      <div class="col-xs-4"><img src='img/github-icon.png' /><span>{{ meta.web }}</span></div>
+    <div id='top' class="row hidden-xs">
+      <div class="col-md-4"><img src='img/phone-icon.png' /><span>{{ meta.number }}</span></div>
+      <div class="col-md-4"><img src='img/mail-icon.png' /><span>{{ meta.email }}</span></div>
+      <div class="col-md-4"><img src='img/github-icon.png' /><span>{{ meta.web }}</span></div>
     </div>
     <div id='name' class="row">
 
@@ -147,12 +162,12 @@
       <h2>EXPERIENCE</h2>
       {{#each experience}}
       <div class="row" class="position">
-        <div class="col-xs-3">
+        <div class="col-md-3">
           <div class='job'>{{ this.job }}</div>
           <div class='company'>{{ this.company }}</div>
           <div class='dates'>{{ this.dates }}</div>
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9">
           {{#each this.description}}
             <p>{{this}}</p>
           {{/each}}
@@ -170,11 +185,11 @@
     </div>
     {{#each projects}}
     <div class="row" class="position">
-      <div class="col-xs-3">
+      <div class="col-md-3">
         <div class='job'>{{this.job}}</div>
         <div class='company'>{{this.url}}</div>
       </div>
-      <div class="col-xs-9">
+      <div class="col-md-9">
         {{#each this.description}}
           <p>{{this}}</p>
         {{/each}}
@@ -185,6 +200,17 @@
       {{/unless}}
     {{/each}}
   </article>
+
+  <section id='contact' class='section visible-xs'>
+    <div class="row">
+      <h2>CONTACT</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3"><img src='img/phone-icon.png' /><span>{{ meta.number }}</span></div>
+      <div class="col-md-3"><img src='img/mail-icon.png' /><span>{{ meta.email }}</span></div>
+      <div class="col-md-3"><img src='img/github-icon.png' /><span>{{ meta.web }}</span></div>
+    </div>
+  </section>
 </div>
 </body>
 </html>
