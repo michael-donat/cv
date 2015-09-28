@@ -120,6 +120,20 @@
   .dates {
     font-size: 0.7em;
   }
+
+  @page {
+    /* this affects the margin in the printer settings */
+    margin: 10mm 5mm 10mm 5mm;
+  }
+
+
+  @media print {
+    #expertise {page-break-after: avoid;}
+    .job {page-break-after: avoid;}
+    .section {page-break-after: avoid;}
+    .section p {page-break-after: avoid;}
+  }
+
 </style>
 <body>
 <div class='container'>
