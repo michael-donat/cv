@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/michael-donat/cv#readme",
   "dependencies": {
-    "handlebars": "^4.0.2",
+    "handlebars": "^4.0.2"
   }
 }

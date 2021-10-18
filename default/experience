@@ -1,7 +1,39 @@
+job=VP of Engineering
+company=Utility Warehouse Ltd.
+dates=November 2018 - October 2021
+-----------------------------
+
+In my role as VPE my focus has shifted towards establishing a scalable engineering management function for the long term.
+
+Brought in and promoted a team of Heads of Engineering who’s daily focus is on growing teams, talent development,
+delivery, architecture and solidifying of our engineering culture.
+
+As a member of the senior technology leadership team I played major parts in establishing the company strategic
+direction, portfolio investment and further improvement of the employee value proposition l. I’ve been a leading
+voice in enabling change to the business, ways the company operates and manages the employee base.
+
+=============================
 job=Head of Web Systems
 company=Utility Warehouse Ltd.
-dates=February 2016 - present
+dates=February 2016 - November 2018
 -----------------------------
+
+Joined UW as part of a new team to lead the business digital transformation. I was responsible for growing the
+engineering department from a small team operating UW's old legacy platform to a modern, 100 strong product team built
+on autonomy and end to end ownership of their product areas.
+
+Initially focussed on bringing in new technology, replatforming, system design, and establishing the foundation of the
+new UW platform long term. Transitioned from a mix of proprietary/LAMP stack to an eventually consistent, event sourced,
+micro distributed architecture deployed in kubernetes with go-lang, typescript, react and react native as core building
+blocks.
+
+Introduced and established an engineering lead culture with focus on agile and devops mindsets, switch from management
+to leadership, recruitment and onboarding strategies which lead to an environment engineers loved for being able to be
+productive, experiment with new technologies, learn and grow their careers, be trusted and most importantly have fun
+and satisfaction from their day to day.
+
+Open source stack with staples including golang, typescript, react, react-native, graphql, grpc, kubernetes, docker,
+cockroachdb, kafka, protocol buffers and many more cloud native technologies.
 
 =============================
 job=Head of Engineering
